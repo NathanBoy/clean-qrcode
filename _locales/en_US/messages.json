@@ -25,5 +25,8 @@
    },
    "textToLong": {
       "message": "Content is Too long to be QRcoded"
+   },
+   "decodeFailed": {
+      "message": "Image failed to load, cannot decode QR code"
    }
 }

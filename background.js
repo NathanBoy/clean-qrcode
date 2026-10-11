@@ -49,10 +49,8 @@ chrome.contextMenus.onClicked.addListener(function (menu, evt) {
   // 解析二维码
   else if (menu.menuItemId === DECODE_MENU_ID) {
     if (menu.srcUrl) {
-      qrcode.callback = function (text) {
-        chrome.tabs.sendMessage(evt.id, { decodeText: text });
-      };
-      qrcode.decode(menu.srcUrl);
+      // 交给 content script 解码（content script 有 DOM，zxing 需要 canvas/Image）
+      chrome.tabs.sendMessage(evt.id, { decodeUrl: menu.srcUrl });
     }
   }
 });

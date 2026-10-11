@@ -16,6 +16,7 @@
     {
       "all_frames": false,
       "js": [
+        "lib/zxing.min.js",
         "lib/qrcode_option.js",
         "lib/qrgen.min.js",
         "lib/content.js"
