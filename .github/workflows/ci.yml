@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-check:
+    name: Lint & validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 校验 manifest.json 是合法 JSON 且为 Manifest V3
+      - name: Validate manifest.json
+        run: node -e "const m=require('./manifest.json'); if(m.manifest_version!==3) throw new Error('must be MV3'); console.log('manifest OK, version '+m.version)"
+
+      # 对核心 JS 做语法检查（跳过压缩的三方库）
+      - name: Syntax-check scripts
+        run: |
+          for f in background.js lib/popup.js lib/content.js lib/qrcode_option.js; do
+            node --check "$f" && echo "OK $f"
+          done
+
+      # 校验语言包 JSON 合法
+      - name: Validate locale files
+        run: |
+          for f in _locales/*/messages.json; do node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" && echo "OK $f"; done

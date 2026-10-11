@@ -1,5 +1,10 @@
 # Clean QRCode 极简二维码
 
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Chrome](https://img.shields.io/badge/Chrome-109%2B-brightgreen.svg)](https://www.google.com/chrome/)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-blueviolet.svg)](manifest.json)
+[![CI](https://github.com/NathanBoy/clean-qrcode/actions/workflows/ci.yml/badge.svg)](https://github.com/NathanBoy/clean-qrcode/actions/workflows/ci.yml)
+
 一个**完全本地、离线可用**的 Chrome 二维码助手扩展：把当前页面地址、选中的文本、链接或图片地址一键生成二维码，也能右键解析网页里的二维码图片内容，防止扫码中毒。
 
 ![popup 效果](res/popup.png)
