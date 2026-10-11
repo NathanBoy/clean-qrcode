@@ -1,0 +1,16 @@
+# 依赖与构建产物
+node_modules/
+build/
+output/
+dist/
+
+# 日志
+*.log
+
+# 打包产物
+*.zip
+*.crx
+*.pem
+
+# macOS
+.DS_Store

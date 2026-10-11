@@ -1,0 +1,29 @@
+{
+   "extDesp": {
+      "message": "A fully local, offline QR assistant. Generate a QR code from the current page URL, selected text, link or image URL via the toolbar button or context menu; decode QR images in web pages to avoid scanning malicious links. No remote dependency, no ads, lightweight."
+   },
+   "extName": {
+      "message": "Simple QR Generator"
+   },
+   "waiting": {
+      "message": "Please wait..."
+   },
+   "generate": {
+      "message": "Generate QRcode"
+   },
+   "decode": {
+      "message": "Decode QRcode"
+   },
+   "showDecodeText": {
+      "message": "The Content in QRcode is: "
+   },
+   "showQRcodeImg": {
+      "message": "QRcode Generated below: "
+   },
+   "copied": {
+      "message": "Copied"
+   },
+   "textToLong": {
+      "message": "Content is Too long to be QRcoded"
+   }
+}

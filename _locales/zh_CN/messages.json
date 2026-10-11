@@ -1,0 +1,29 @@
+{
+   "extDesp": {
+      "message": "一个完全本地、离线可用的二维码助手：通过右键菜单或工具栏按钮，把当前页面地址、选中的文本、链接、图片地址等一键生成二维码；也能右键解析网页里的二维码图片内容，防止扫码中毒。无远程依赖、无广告、轻量简洁。"
+   },
+   "extName": {
+      "message": "极简二维码"
+   },
+   "waiting": {
+      "message": "请稍等…"
+   },
+   "generate": {
+      "message": "生成二维码图片"
+   },
+   "decode": {
+      "message": "解析二维码内容"
+   },
+   "showDecodeText": {
+      "message": "二维码中的内容为："
+   },
+   "showQRcodeImg": {
+      "message": "生成二维码图片为："
+   },
+   "copied": {
+      "message": "已复制"
+   },
+   "textToLong": {
+      "message": "生成二维码文字过长"
+   }
+}
